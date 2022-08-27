@@ -1,0 +1,22 @@
+
+Flickr ID:<br>
+<%= form_with url: false, method: :get do |form| %>
+  <%= form.text_field :flickr_id %>
+  <%= form.submit %>
+<% end %>
+
+<% if @pictures.nil? %>
+  Search for a user's photos with their ID!
+<% elsif @pictures.none? %>
+  There are no public photos to display.
+<% else %>
+  There are pictures!<br>
+  <% @pictures.each do |picture| %>
+    <% picture_url = "https://live.staticflickr.com/#{picture.server}/#{picture.id}_#{picture.secret}.jpg" %>
+    <%= picture.title %>
+    <br>
+    <%= image_tag picture_url%>
+    <br>
+  <% end %>
+<% end %>
+
