@@ -1,24 +1,13 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Flickr API
 
-Things you may want to cover:
+This project was created to practice accessing an API.
 
-* Ruby version
+### Functionality
 
-* System dependencies
+* Users can retrieve another user's photos in their public photostream by entering their Flickr ID
+* Uses Figaro gem to keep the Flickr API key and secret private and secure
 
-* Configuration
+### Screenshot
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Flickr Screenshot](screenshots/flickr.png)
